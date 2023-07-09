@@ -86,4 +86,4 @@ df.loc[df.sample(frac=0.01).index, 'ProductPrice'] = df['ProductPrice'] * 10
 # Convert PurchaseDate to datetime format
 df['PurchaseDate'] = pd.to_datetime(df['PurchaseDate'])
 
-df.head()
+df.to_csv('retail_data.csv', index=False)
